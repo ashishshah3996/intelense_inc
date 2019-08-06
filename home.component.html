@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+  <section id="showcase">
+    <div class='hero-text'>
+      <img src="http://www.intelense.com/images/logo.png">
+      <h1>Who we are</h1>
+      <p>We care for safety and we cherish life, therefore we have embraced the charge of forming means to enhance the
+        Emergency Response systems and safeguard humankind.</p>
+    </div>
+  </section>
+  <section id="newsletter">
+    <div class="container">
+      <h1>Subscribe To Our Newsletter</h1>
+      <div class="inner">
+          <!-- <input class="i1" placeholder="Enter Email" type="email" name="email" ngModel email="true" required> -->
+          <form name="form">
+            <div class="form-group"  [formGroup]="form">
+              <input class="form-control" placeholder="Enter Email" type="text" formControlName="email"
+                [ngClass]="{'is-invalid': form.get('email').touched && form.get('email').invalid}" />
+                <input type="submit">
+              <div *ngIf="form.get('email').touched && form.get('email').invalid" class="invalid-feedback">
+                <div class="highlight" *ngIf="form.get('email').errors.required">Email name is required</div>
+                <div class="highlight" *ngIf="form.get('email').errors.email">Email must be a valid!</div>
+              </div>
+            </div>
+          </form>
+    </div>
+    </div>
+  </section>
+  <footer>
+    <p>Copyright &copy; 2019 All rights reserved by intelense</p>
+  </footer>
+</body>
+
+
+</html>
