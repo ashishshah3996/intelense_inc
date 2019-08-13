@@ -1,0 +1,57 @@
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+#branding h1 {
+  font: 30px Arial, Helvetica,sans-serif;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+/* Header **/
+header{
+  background:black;
+  color:#ffffff;
+  padding: 20px;
+  min-height:40px;
+  border-bottom:rgb(146, 140, 140) 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+  font: 15px Arial, sans-serif;
+}
+
+header li{
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+header nav{
+  float:right;
+  margin-top:18px;
+}
+
+header a:hover{
+  color:blue;
+  font-weight:bold;
+}
